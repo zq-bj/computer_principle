@@ -11,18 +11,33 @@
 ## 项目说明
 本项目用于学习计算机系统原理课程，为北京高等教育自学考试（国家代码13015）做准备。
 
+## 技术栈
+- **框架**: VuePress 2 + vuepress-theme-hope
+- **内容格式**: Markdown
+- **部署方式**: GitHub Pages / Vercel
+- **开发环境**: Node.js + pnpm
+
 ## 目录结构
 ```
-├── notes/              # 按章节学习笔记
-│   ├── 01_计算机系统概述.md
-│   ├── 02_数据表示与运算.md
-│   ├── 03_存储系统.md
-│   ├── 04_指令系统.md
-│   ├── 05_CPU设计.md
-│   └── 06_总线与IO.md
-├── exercises/          # 练习题
-├── exams/              # 历年真题
-└── PROGRESS.md         # 学习进度
+├── src/                    # 源代码目录
+│   ├── .vuepress/          # VuePress配置文件
+│   │   ├── config.ts       # 网站配置
+│   │   ├── navbar.ts       # 导航栏配置
+│   │   ├── sidebar.ts      # 侧边栏配置
+│   │   └── theme.ts        # 主题配置
+│   ├── computer_principle/ # 学习笔记
+│   │   ├── 01_计算机系统概述.md
+│   │   ├── 02_数据表示和运算.md
+│   │   ├── 03_程序转换与机器级表示.md
+│   │   ├── 04_可执行文件的生成与加载.md
+│   │   ├── 05_程序的存储访问.md
+│   │   └── 06_IO操作的实现.md
+│   ├── _posts/             # 博客文章
+│   └── reading/            # 读书笔记
+├── exercises/              # 练习题
+├── exams/                  # 历年真题
+├── PROGRESS.md             # 学习进度
+└── package.json            # 项目依赖配置
 ```
 
 ## 学习资源
@@ -35,3 +50,78 @@
 2. 我出题测试巩固
 3. 遇到疑问随时答疑
 4. 整理笔记保存复习
+
+## 开发命令
+```bash
+# 安装依赖
+pnpm install
+
+# 本地开发
+pnpm docs:dev
+
+# 构建静态网站
+pnpm docs:build
+
+# 清理缓存
+pnpm docs:clean
+```
+
+## 笔记格式规范
+
+### 文件命名规则
+格式：`{章节号}_{小节号}_{小节标题}.md`
+- 章节号：2位数字（01-06）
+- 小节号：2位数字（01-99）
+- 示例：`01_2_模型计算机基本硬件结构.md`
+
+### Frontmatter格式
+```markdown
+---
+title: {章节号}.{小节号} {小节标题}
+date: YYYY-MM-DD
+tags: [计算机原理, 章节名称]
+order: 章节序号
+---
+
+# 章节内容
+```
+
+### 导航栏配置（navbar.ts）
+```typescript
+text: "{章节号}.{小节号} {小节标题}",
+link: "/computer_principle/{文件名}",
+```
+
+### 示例
+文件名：`01_2_模型计算机基本硬件结构.md`
+- title: `1.2 计算机基本硬件结构`
+- navbar text: `1.2 计算机基本硬件结构`
+
+### 图表绘制规范
+使用 **Mermaid** 语法绘制图表，禁止使用 ASCII 字符画。
+
+### 重点标记规范
+重点内容使用 **红色+下划线** 标记：
+```html
+<span style="color:#c0392b; text-decoration:underline">**重点内容**</span>
+```
+
+#### 支持的图表类型
+- `graph TB/RL/LR/TB` - 流程图/结构图
+- `sequenceDiagram` - 时序图
+- `classDiagram` - 类图
+- `stateDiagram-v2` - 状态图
+
+## 部署说明
+1. 推送到GitHub仓库
+2. GitHub Actions自动构建
+3. 部署到GitHub Pages
+4. 访问地址：https://your-username.github.io/computer-principle/
+
+## 章节顺序
+1. 第一章 计算机系统概述
+2. 第二章 数据表示和运算
+3. 第三章 程序转换与机器级表示
+4. 第四章 可执行文件的生成与加载
+5. 第五章 程序的存储访问
+6. 第六章 IO操作的实现
