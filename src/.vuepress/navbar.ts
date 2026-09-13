@@ -10,19 +10,19 @@ export const navbar: NavbarConfig = [
         children: [
           {
             text: "1.1 冯诺依曼结构计算机特点",
-            link: "/computer_principle/01_1_冯诺依曼思想",
+            link: "/computer_principle/01_计算机系统概述/01_1_冯诺依曼思想",
           },
           {
             text: "1.2 程序的开发和执行过程",
-            link: "/computer_principle/01_2_程序的开发和执行过程",
+            link: "/computer_principle/01_计算机系统概述/01_2_程序的开发和执行过程",
           },
           {
             text: "1.3 计算机系统层次结构",
-            link: "/computer_principle/01_3_计算机系统层次结构",
+            link: "/computer_principle/01_计算机系统概述/01_3_计算机系统层次结构",
           },
           {
             text: "1.4 计算机性能评价",
-            link: "/computer_principle/01_4_计算机性能评价",
+            link: "/computer_principle/01_计算机系统概述/01_4_计算机性能评价",
           },
         ],
       },
@@ -31,37 +31,37 @@ export const navbar: NavbarConfig = [
         children: [
           {
             text: "2.1 数值数据的表示",
-            link: "/computer_principle/02_1_数值数据的表示",
+            link: "/computer_principle/02_数据表示和运算/02_1_数值数据的表示",
           },
           {
             text: "2.2 非数值数据的表示",
-            link: "/computer_principle/02_2_非数值数据的表示",
+            link: "/computer_principle/02_数据表示和运算/02_2_非数值数据的表示",
           },
           {
             text: "2.3 数据的存放",
-            link: "/computer_principle/02_3_数据的存放",
+            link: "/computer_principle/02_数据表示和运算/02_3_数据的存放",
           },
           {
             text: "2.4 数据的运算",
-            link: "/computer_principle/02_4_数据的运算",
+            link: "/computer_principle/02_数据表示和运算/02_4_数据的运算",
           },
         ],
       },
       {
         text: "第三章 程序转换与机器级表示",
-        link: "/computer_principle/03_程序转换与机器级表示",
+        link: "/computer_principle/03_程序转换与机器级表示/03_程序转换与机器级表示",
       },
       {
         text: "第四章 可执行文件的生成与加载",
-        link: "/computer_principle/04_可执行文件的生成与加载",
+        link: "/computer_principle/04_可执行文件的生成与加载/04_可执行文件的生成与加载",
       },
       {
         text: "第五章 程序的存储访问",
-        link: "/computer_principle/05_程序的存储访问",
+        link: "/computer_principle/05_程序的存储访问/05_程序的存储访问",
       },
       {
         text: "第六章 IO操作的实现",
-        link: "/computer_principle/06_IO操作的实现",
+        link: "/computer_principle/06_IO操作的实现/06_IO操作的实现",
       },
     ],
   },
