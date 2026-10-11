@@ -6,7 +6,11 @@ import { sidebar } from "./sidebar.js";
 
 export default defineUserConfig({
   base: "/",
+  host: "0.0.0.0",
   bundler: viteBundler(),
+  head: [
+    ["link", { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" }],
+  ],
 
   locales: {
     "/": {
@@ -38,6 +42,9 @@ export default defineUserConfig({
       mdEnhance: {
         mermaid: true,
       },
+    },
+    markdown: {
+      math: true,
     },
   }),
 
