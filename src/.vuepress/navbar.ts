@@ -30,20 +30,24 @@ export const navbar: NavbarConfig = [
         text: "第二章 数据表示和运算",
         children: [
           {
-            text: "2.1 数值数据的表示",
-            link: "/computer_principle/02_数据表示和运算/02_1_数值数据的表示",
+            text: "2.1 进位计数制",
+            link: "/computer_principle/02_数据表示和运算/02_1_进位计数制",
           },
           {
-            text: "2.2 非数值数据的表示",
-            link: "/computer_principle/02_数据表示和运算/02_2_非数值数据的表示",
+            text: "2.2 定点数的编码规则",
+            link: "/computer_principle/02_数据表示和运算/02_2_定点数的编码规则",
           },
           {
-            text: "2.3 数据的存放",
-            link: "/computer_principle/02_数据表示和运算/02_3_数据的存放",
+            text: "2.3 浮点数与数值类型转换",
+            link: "/computer_principle/02_数据表示和运算/02_3_浮点数与数值类型转换",
           },
           {
-            text: "2.4 数据的运算",
-            link: "/computer_principle/02_数据表示和运算/02_4_数据的运算",
+            text: "2.4 数据宽度与存放",
+            link: "/computer_principle/02_数据表示和运算/02_4_数据宽度与存放",
+          },
+          {
+            text: "2.5 作业",
+            link: "/computer_principle/02_数据表示和运算/02_5_作业",
           },
         ],
       },
