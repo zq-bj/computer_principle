@@ -1,0 +1,72 @@
+[
+  {
+    "title": "第一章 · 计算机系统概述",
+    "start": 0.0,
+    "duration": 30.7
+  },
+  {
+    "title": "冯·诺依曼结构：存储程序",
+    "start": 30.7,
+    "duration": 38.138
+  },
+  {
+    "title": "CPU 里的几个关键角色",
+    "start": 68.838,
+    "duration": 42.1
+  },
+  {
+    "title": "一条指令怎样执行？",
+    "start": 110.938,
+    "duration": 46.346
+  },
+  {
+    "title": "指令与数据：相同位串，不同用途",
+    "start": 157.284,
+    "duration": 43.9
+  },
+  {
+    "title": "从源代码到可执行文件",
+    "start": 201.184,
+    "duration": 46.5
+  },
+  {
+    "title": "程序生成以后，还要装入和执行",
+    "start": 247.684,
+    "duration": 43.4
+  },
+  {
+    "title": "系统层次：ISA 是软硬件分界",
+    "start": 291.084,
+    "duration": 43.706
+  },
+  {
+    "title": "API 与 ABI，分别约定什么？",
+    "start": 334.79,
+    "duration": 42.746
+  },
+  {
+    "title": "评价性能，先说清楚是哪一种时间",
+    "start": 377.536,
+    "duration": 46.322
+  },
+  {
+    "title": "核心公式：CPU 时间由三个量决定",
+    "start": 423.858,
+    "duration": 42.9
+  },
+  {
+    "title": "综合 CPI：按照指令条数加权",
+    "start": 466.758,
+    "duration": 44.5
+  },
+  {
+    "title": "不要只看主频、CPI 或 MIPS",
+    "start": 511.258,
+    "duration": 44.7
+  },
+  {
+    "title": "第一章复习：从能说清，到能独立做题",
+    "start": 555.958,
+    "duration": 44.714
+  }
+]

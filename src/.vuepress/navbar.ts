@@ -9,6 +9,10 @@ export const navbar: NavbarConfig = [
         text: "第一章 计算机系统概述",
         children: [
           {
+            text: "第一章视频讲解",
+            link: "/computer_principle/01_计算机系统概述/01_计算机系统概述",
+          },
+          {
             text: "1.1 冯诺依曼结构计算机特点",
             link: "/computer_principle/01_计算机系统概述/01_1_冯诺依曼思想",
           },
@@ -23,6 +27,10 @@ export const navbar: NavbarConfig = [
           {
             text: "1.4 计算机性能评价",
             link: "/computer_principle/01_计算机系统概述/01_4_计算机性能评价",
+          },
+          {
+            text: "1.5 作业",
+            link: "/computer_principle/01_计算机系统概述/01_5_作业",
           },
         ],
       },
@@ -64,7 +72,7 @@ export const navbar: NavbarConfig = [
         link: "/computer_principle/05_程序的存储访问/05_程序的存储访问",
       },
       {
-        text: "第六章 IO操作的实现",
+        text: "第六章 I/O操作的实现",
         link: "/computer_principle/06_IO操作的实现/06_IO操作的实现",
       },
     ],
