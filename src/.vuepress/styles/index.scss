@@ -6,6 +6,8 @@
   background: var(--vp-c-bg-alt, var(--bg-color-secondary, transparent));
 
   > summary {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     gap: 0.65rem;
