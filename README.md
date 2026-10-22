@@ -88,10 +88,18 @@ order: 章节序号
 ```
 
 ## 部署说明
-1. 推送到GitHub仓库
-2. GitHub Actions自动构建
-3. 部署到GitHub Pages
-4. 访问地址：https://your-username.github.io/computer-principle/
+
+网站地址：https://zq-bj.github.io/computer_principle/
+
+在仓库 Settings → Pages 中选择 GitHub Actions 作为发布来源。推送到 GitHub 的 `main` 分支后，工作流自动安装依赖、构建并部署网站，也可在 Actions 页面手动触发。
+
+本地开发默认使用根路径 `/`；GitHub Pages 构建通过 `DOCS_BASE=/computer_principle/` 设置仓库子路径。可在本地执行相同构建：
+
+```bash
+DOCS_BASE=/computer_principle/ pnpm docs:build
+```
+
+构建产物位于 `src/.vuepress/dist`，由工作流发布，无需提交生成文件。
 
 ## 章节顺序
 1. 第一章 计算机系统概述

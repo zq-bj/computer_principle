@@ -4,12 +4,14 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { navbar } from "./navbar.js";
 import { sidebar } from "./sidebar.js";
 
+const base = process.env.DOCS_BASE || "/";
+
 export default defineUserConfig({
-  base: "/",
+  base,
   host: "0.0.0.0",
   bundler: viteBundler(),
   head: [
-    ["link", { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" }],
+    ["link", { rel: "icon", href: `${base}favicon.svg`, type: "image/svg+xml" }],
   ],
 
   locales: {
@@ -34,8 +36,8 @@ export default defineUserConfig({
       blue: "#49b6ff",
     },
     dark: "toggle",
-    logo: "/logo.svg",
-    repo: "your-username/computer-principle",
+    logo: "/favicon.svg",
+    repo: "zq-bj/computer_principle",
     docsDir: "src",
     sidebarSorting: "order",
     plugins: {
